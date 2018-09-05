@@ -133,6 +133,11 @@ app.use('/webfonts', express.static(path.join(__dirname, 'node_modules/@fortawes
  * Primary app routes.
  */
 app.get('/', homeController.index);
+app.get('/index', homeController.index);
+app.get('/about', homeController.about);
+app.get('/services', homeController.services);
+app.get('/projects', homeController.projects);
+app.get('/contact', homeController.contact);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
