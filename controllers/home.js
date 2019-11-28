@@ -31,3 +31,9 @@ exports.contact = (req, res) => {
     title: 'Presidia - Contact Us'
   });
 };
+
+exports.owners = (req, res) => {
+  res.render('owners', {
+    title: 'Presidia - Insider'
+  });
+};

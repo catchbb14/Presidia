@@ -135,6 +135,7 @@ app.use('/webfonts', express.static(path.join(__dirname, 'node_modules/@fortawes
 app.get('/', homeController.index);
 app.get('/index', homeController.index);
 app.get('/about', homeController.about);
+app.get('/owners', homeController.owners);
 app.get('/services', homeController.services);
 app.get('/projects', homeController.projects);
 app.get('/contact', homeController.contact);
